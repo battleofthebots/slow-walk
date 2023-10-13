@@ -1,0 +1,12 @@
+---
+version: "3"
+
+services:
+  gitlab:
+    build: .
+    ports:
+      - "80:80"
+      - "22:22"
+   # environment:
+    #  GITLAB_OMNIBUS_CONFIG: |
+     #   gitlab_rails['initial_shared_runners_registration_token'] = "tokensauce"

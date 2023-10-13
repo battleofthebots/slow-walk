@@ -1,0 +1,13 @@
+stages:
+  - build
+  - execute
+
+build-code-job:
+  stage: build
+  script:
+    - gcc test.c -o test
+
+execute-code-job:
+  stage: execute
+  script:
+    - ./test
